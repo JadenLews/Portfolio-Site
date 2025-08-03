@@ -25,38 +25,55 @@ function App() {
 
   const skills = {
     "Programming Languages":
-      "Python, Java, JavaScript, TypeScript, SQL, C, Kotlin, OCaml, HTML/CSS",
-    "ML/AI Frameworks": "Pandas, NumPy, Jupyter",
-    "Web Technologies":
-      "React.js, Node.js, Django, Next.js, REST APIs, Firebase",
-    "Tools & Platforms": "Docker, Git, AWS, Bash, Jira, MongoDB, PostgreSQL",
-    "Core Competencies":
-      "Machine Learning, Deep Learning, Data Analysis, Statistical Modeling, Full Stack",
-    "Domain Knowledge":
-      "Natural Language Processing, Stochastic Computing, Cybersecurity, Quantitative Finance",
+      "Python, Java, JavaScript, TypeScript, SQL, C, Kotlin, OCaml, HTML, CSS",
+    "Frameworks & Libraries":
+      "React, Scikit-learn, Django, Node.js, Bootstrap, Pandas, NumPy, Jupyter",
+    "Tools & Platforms":
+      "Docker, Git, AWS, Excel, Firebase, Jira, MongoDB, PostgreSQL, Render, GitHub",
+    "Technical Areas":
+      "Cybersecurity, Full-Stack Development, Machine Learning, Data Analysis, Cryptography, Statistical Modeling",
+    "Software & Systems":
+      "REST APIs, Offline Systems, Peer-to-Peer Networks, Responsive UI/UX, Automated Testing",
+    "Design & Prototyping": "Figma, UX/UI Design, QR Integration, Hashing",
   };
 
   const experiences = [
     {
       title: "Cyber Underwriter Intern",
       company: "Hanover Insurance",
-      date: "Summer 2025",
-      location: "Worcester",
-      upcoming: true,
+      date: "June 9th 2025 - August 8th 2025",
+      location: "Windsor CT",
+      current: false,
       highlight: true,
-      duties: [],
+      duties: [
+        "Collaborated with actuarial and data analytics teams to analyze cyber risk quantification and optimization strategies",
+        "Gained hands-on experience with cyber insurance workflows,  including automated quote generation, and  pricing models",
+        "Supported underwriters by reviewing loss histories, risk control measures, cybersecurity protocols for coverage decisions",
+        "Researched emerging cyber threats and assessed their implications on insurance risk exposure and underwriting practices",
+      ],
     },
     {
       title: "Data Science Department Assistant",
       company: "Clark University",
-      date: "Spring 2025 - Present",
+      date: "March 2025 - Present",
       location: "Worcester",
       current: true,
       duties: [
-        "Collaborate with faculty on research projects, contributing through analysis and visualization",
-        "Developed full-stack web application for local painting company through department’s community initiatives",
-        "Leading redesign of Data Science department website, will serve 300+ students and faculty with improved resource access",
-        "Implemented responsive UI/UX design using React.js and css frameworks, increasing engagement",
+        "Partnered with faculty on research initiatives, delivered data focused insights through statistical analysis and visualizations",
+        "Engineered a web application for local business showcasing full-stack development skills ",
+        "Lead redesign of department website, for 300+ users, implementing responsive UI/UX to improve accessibility and usability",
+      ],
+    },
+    {
+      title: "Directed Study – Distributed Systems",
+      company: "Clark University",
+      date: "January 2024 - May 2024",
+      location: "Worcester",
+      current: false,
+      highlight: true,
+      duties: [
+        "Selected for competitive directed study focused on peer-to-peer and offline systems in constrained environments",
+        "Designed and prototyped an offline digital payment system, addressing limitations in low-connectivity regions",
       ],
     },
     {
@@ -64,7 +81,7 @@ function App() {
       company: "Clark University",
       date: "August 2024 - May 2025",
       location: "Worcester",
-      current: true,
+      current: false,
       duties: [
         "Provide academic support through 8 weekly office hours for 30+ students in CS courses",
         "Lead review sessions covering data structures, algorithms, and Computer Science topics",
@@ -75,42 +92,129 @@ function App() {
   ];
 
   const projects = [
-  {
-    title: "Offline P2P Digital Payment System",
-    tech: "Python, QR Code, Hashing, Recovery, Cryptography, UX/UI Design",
-    github: "https://github.com/jadenlews/p2p-payment", // placeholder
-    demo: null,
-    highlight: true,
-    details: [
-      "Designed and built a secure offline peer-to-peer payment system in Python, with a strong focus on cryptography, security, and data protection.",
-      "Implemented custom hashing and logging mechanisms to ensure transaction integrity and enable user data recovery.",
-      "Handled edge cases to ensure system reliability during offline usage and unusual transaction scenarios.",
-    ],
-  },
-  {
-    title: "Analyzing Global Education Inequality and Impact",
-    tech: "Pandas, NumPy, Data Cleaning, Visualization, Statistical Modeling",
-    github: "https://github.com/jadenlews/education-analysis", // placeholder
-    demo: null,
-    details: [
-      "Conducted multivariable statistical analysis on global economic and education datasets to uncover inequality patterns aligned with UN Goal 4.",
-      "Cleaned and integrated data from UNESCO, World Bank, and UNICEF to enable careful analysis and visualization.",
-      "Explored relationships between government spending, economic disparity, and social issues (e.g. bullying) on dropout rates.",
-      "Created data focused visualizations and reports to convey insights on educational access and equity across regions.",
-    ],
-  },
-  {
-    title: "2D Pool Ball Collision Simulator",
-    tech: "Java, Physics Engine, Math Modeling, GUI, JPanel, Processing",
-    github: "https://github.com/jadenlews/pool-simulator", // placeholder
-    demo: null,
-    details: [
-      "Built a visually interactive 2D pool ball simulator in Java, applying kinematic and trigonometric models for accurate physics simulation.",
-      "Programmed real time trajectory and rebound calculations, emphasis on realistic motion and predictive modeling.",
-      "Used Processing and JPanel to render dynamic visualizations of collision behavior and enhance the user experience.",
-    ],
-  },
-];
+    {
+      title: "Insurance Cost Predictor",
+      tech: "Python, scikit-learn, Pandas, NumPy, Linear Regression, Data Cleaning",
+      github: "https://github.com/JadenLews/Predict_Insurance_Cost",
+      demo: null,
+      details: [
+        "Cleaned and preprocessed real-world insurance data using Pandas, handling missing values, standardizing variables, and removing data inconsistencies.",
+        "Engineered a scikit-learn pipeline combining StandardScaler and LinearRegression to predict healthcare charges based on age, sex, BMI, region, and smoking.",
+        "Evaluated model performance with cross-validation, reporting average R^2 and MSE, and applied the trained model to a separate validation dataset.",
+        "Implemented feature engineering techniques like dummy variable encoding and minimum prediction thresholds for practical output use.",
+      ],
+    },
+    {
+      title: "MERN E-Commerce Prototype",
+      tech: "MongoDB, Express.js, React, Node.js, JavaScript, REST API, CRUD",
+      github: " ", // placeholder
+      demo: null,
+      details: [
+        "Built a full-stack job tracking application using the MERN stack to manage job applications with create, read, update, and delete functionality.",
+        "Designed a RESTful API using Express and Node.js with secure routing, error handling, and MongoDB for persistent backend storage.",
+        "Developed a responsive React frontend with form validation, conditional rendering, and state management for a seamless user experience.",
+        "Implemented features such as job status updates, filtering, and dynamic dashboards to visualize progress across job applications.",
+      ],
+    },
+    {
+      title: "Offline P2P Digital Payment System",
+      tech: "Python, QR Code, Hashing, Recovery, Cryptography, UX/UI Design",
+      github: "https://github.com/JadenLews/P2P_Offline_Final",
+      demo: null,
+      details: [
+        "Designed and built a secure offline peer-to-peer payment system in Python, with a strong focus on cryptography, security, and data protection.",
+        "Implemented custom hashing and logging mechanisms to ensure transaction integrity and enable user data recovery.",
+        "Handled edge cases to ensure system reliability during offline usage and unusual transaction scenarios.",
+      ],
+    },
+    {
+      title: "Analyzing Global Education Inequality and Impact",
+      tech: "Pandas, NumPy, Data Cleaning, Visualization, Statistical Modeling",
+      github: "",
+      demo: null,
+      details: [
+        "Conducted multivariable statistical analysis on global economic and education datasets to uncover inequality patterns aligned with UN Goal 4.",
+        "Cleaned and integrated data from UNESCO, World Bank, and UNICEF to enable careful analysis and visualization.",
+        "Explored relationships between government spending, economic disparity, and social issues (e.g. bullying) on dropout rates.",
+        "Created data focused visualizations and reports to convey insights on educational access and equity across regions.",
+      ],
+    },
+    {
+      title: "Stock Portfolio Tracker",
+      tech: "Django, Python, HTML, CSS, JavaScript, Yahoo Finance API, Figma, SQLite",
+      github: "https://github.com/JadenLews/Stock_App",
+      demo: null,
+      details: [
+        "Developed a full-stack web application in Django to simulate stock investing, track real-time prices, and visualize portfolio performance over time.",
+        "Built portfolio management features allowing users to add stocks, track share quantities, and calculate total investment value.",
+        "Integrated the Yahoo Finance API to pull live market data and display price updates and trends.",
+        "Designed interactive performance charts and watchlists using external graphing libraries and dynamic UI elements.",
+        "Collaborated in a two-person team with an emphasis on clean UI/UX design, responsive layout (designed in Figma), and complete CRUD functionality.",
+      ],
+    },
+    {
+      title: "Small Business Website – AMF Painting",
+      tech: "React, CSS, Flexbox/Grid, Render, Responsive Design, JSON-based Content Management",
+      github: "https://github.com/JadenLews/AMF_Site",
+      demo: "https://realamfpainting.com/",
+      details: [
+        "Designed and developed a production-ready website for a local Worcester business as part of a university-led initiative supporting small businesses.",
+        "Collaborated directly with the business owner through multiple feedback cycles to align the final product with their branding and functional goals.",
+        "Built a responsive React frontend with attention to typography, layout, and accessibility across devices.",
+        "Implemented a lightweight content management approach using centralized JSON and global style files to allow client-side updates without technical overhead.",
+      ],
+    },
+    {
+      title: "2D Pool Ball Collision Simulator",
+      tech: "Java, Physics Engine, Math Modeling, GUI, JPanel, Processing",
+      github: "https://github.com/JadenLews/Pool_Collision_Final",
+      demo: null,
+      details: [
+        "Built a visually interactive 2D pool ball simulator in Java, applying kinematic and trigonometric models for accurate physics simulation.",
+        "Programmed real time trajectory and rebound calculations, emphasis on realistic motion and predictive modeling.",
+        "Used Processing and JPanel to render dynamic visualizations of collision behavior and enhance the user experience.",
+      ],
+    },
+    {
+  title: "College Application Management System",
+  tech: "Django, Python, SQLite, HTML, CSS, Bootstrap, Git",
+  github: "https://github.com/JadenLews/Database_Final",
+  demo: "https://www.youtube.com/watch?v=9N9P5jDcozU",
+  details: [
+    "Built a full-stack Django web application to manage college applications as part of a university-level Database Design and Management course.",
+    "Implemented features for student users to register, create profiles, browse colleges, submit applications, and track their status.",
+    "Developed a role-based system for college-affiliated users to log in, manage institutional profiles, and review applications.",
+    "Utilized Django’s admin panel for CRUD operations and relational data management between students, colleges, and applications.",
+    "Designed and normalized a relational database schema, and collaborated in a small development team using Git for version control.",
+  ],
+},
+    {
+      title: "Clark Ski Team Rental App",
+      tech: "Kotlin, Android Studio, Firebase Realtime Database, Firebase Authentication, Google Sign-In",
+      github: "https://github.com/JadenLews/Mobile_Development_Final",
+      demo: null,
+      details: [
+        "Developed a mobile app in Kotlin for the Clark University Ski Team to manage ski equipment rentals in real time.",
+        "Integrated Firebase Authentication with Google Sign-In to provide secure user login and access control.",
+        "Built full CRUD functionality for ski inventory, allowing users to add, edit, delete, and view gear availability.",
+        "Implemented a real-time check-out and return system using Firebase Realtime Database for immediate equipment status updates.",
+        "Focused on delivering a simple and intuitive user experience tailored to team needs during the ski season.",
+      ],
+    },
+    {
+  title: "Health & Nutrition Tracker",
+  tech: "Python, Tkinter, File I/O",
+  github: "https://github.com/JadenLews/CSCI120_Final",
+  demo: null,
+  details: [
+    "Built a beginner-friendly desktop application using Python and Tkinter to help users track their health data and daily nutrition intake.",
+    "Implemented user profile creation with inputs like height, weight, and age, allowing real-time BMI calculation and basic health feedback.",
+    "Developed a food logging system to track calories, protein, carbohydrates, and other nutritional values for daily meal planning.",
+    "Stored user data using basic file I/O methods for local persistence and retrieval, with support for multiple entries.",
+    "Served as an early milestone in learning application structure, GUI development, and simple data modeling in Python.",
+  ],
+},
+  ];
 
   return (
     <div className="App">
@@ -202,14 +306,15 @@ function App() {
         >
           <h2>About Me</h2>
           <p>
-            I'm a senior at Clark University double majoring in Computer Science
-            and Data Science with a minor in Math. I first started coding when I
-            took a class where I built a game in Java during high school, and
-            I've been coding since, lately I've been diving deeper into ML and
-            data analysis. I've participated in multiple hackathons, and im
-            exctied to be spending this summer joining Hanover Insurance as a
-            Cyber Underwriter Intern. In my free time, I like to go to the gym,
-            and work on coding projects.
+            I’m a senior at Clark University double majoring in Computer Science
+            and Data Science, with a minor in Mathematics. I first got into
+            coding in high school, where I built a game in Java for a class, and
+            I’ve been hooked ever since. Lately, I’ve been diving deeper into
+            machine learning and data analysis through personal projects and
+            coursework. I’ve participated in several hackathons and spent this
+            summer at Hanover Insurance as a Cyber Underwriting Intern. In my
+            free time, I enjoy going to the gym and building new coding
+            projects.
           </p>
         </section>
 
@@ -249,7 +354,6 @@ function App() {
                   <h3 className="experience-title">
                     {exp.title}
                     {exp.upcoming && (
-                      
                       <span className="badge upcoming">Upcoming</span>
                     )}
                     {exp.current && (
@@ -345,9 +449,8 @@ function App() {
                 Relevant Courses: Software Engineering, Database Management &
                 System Design, Mobile Software Development, Assembly & Computer
                 Organization, Analysis of Programming Languages, Algorithms,
-                Intro to Quantitative Finance, Stochastic computing, Stochastic
-                Computing, Computer Networks, Data Structures, Distributed
-                Systems, Automata Theory
+                Intro to Quantitative Finance, Stochastic Computing, Computer
+                Networks, Data Structures, Distributed Systems, Automata Theory
               </li>
             </ul>
           </div>
@@ -360,8 +463,8 @@ function App() {
           <h2 className="after_different">Let's Connect</h2>
           <p className="contact-text">
             I’m always happy to connect about future opportunities or projects
-            that align with my interests. I’m currently committed to my
-            internship, I’m always open to conversations, feel free to reach out!
+            that align with my interests. I’m always open to conversations, feel
+            free to reach out!
           </p>
           <div className="contact-methods">
             <a href="mailto:lewisjaden19@gmail.com" className="contact-method">
